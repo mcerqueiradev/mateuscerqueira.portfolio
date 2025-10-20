@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "title": "Horizon Real Estate",
+    "description": "Enterprise real estate management platform with comprehensive property and contract management.",
+    "fullDescription": "A sophisticated real estate management platform developed as the final project for Assembly School, showcasing enterprise-level full-stack development capabilities. The system features a robust backend built with C# and .NET 7, implementing Clean Architecture with Domain-Driven Design principles. The frontend delivers a modern user experience using Angular 16 with reactive forms, state management, and responsive Tailwind CSS design. Key architectural achievements include repository pattern implementation, CQRS with MediatR, and comprehensive unit testing. The platform handles complex business workflows including property listings, tenant management, lease contracts, and financial tracking with role-based access control for administrators, agents, and clients.",
+    "image": "/projects/horizon_cover.png",
+    "link": "/projects/1",
+    "category": "Enterprise Web Application",
+    "technologies": ["C#", ".NET 7", "Entity Framework Core", "SQL Server", "Angular 16", "TypeScript", "Tailwind CSS", "JWT Authentication", "xUnit", "MediatR", "Clean Architecture"],
+    "liveUrl": "https://horizon-demo.com",
+    "githubUrl": "https://github.com/mcerqueiradev/assembly.horizon.svc",
+    "features": [
+      "Clean Architecture with Domain-Driven Design",
+      "CQRS Pattern with MediatR for command/query separation",
+      "Repository Pattern with generic implementation",
+      "JWT-based authentication & authorization system",
+      "Role-based access control (Admin, Agent, Client)",
+      "Advanced property search with filters and pagination",
+      "Lease contract management with PDF generation",
+      "Financial tracking and payment processing",
+      "Real-time notifications system",
+      "Comprehensive unit testing with xUnit",
+      "Responsive design with mobile-first approach",
+      "API versioning and Swagger documentation"
+    ],
+    "technicalHighlights": [
+      "Backend: .NET 7 Web API with Entity Framework Core",
+      "Database: SQL Server with migrations and seeding",
+      "Frontend: Angular 16 with RxJS for state management",
+      "Authentication: JWT with refresh token mechanism",
+      "Architecture: Clean Architecture with separation of concerns",
+      "Testing: 85%+ code coverage with xUnit and Moq",
+      "UI/UX: Modern design system with Tailwind CSS"
+    ],
+    "role": "Full Stack Developer & Architect",
+    "duration": "6 months (Final Project)",
+    "client": "Assembly School",
+    "status": "Completed",
+    "gallery": [
+      "/projects/horizon_landingpage.png",
+      "/projects/horizon_property.png",
+      "/projects/horizon_dashboard.png",
+      "/projects/horizon_contracts.png",
+      "/projects/horizon_contract.png",
+      "/projects/horizon_editaccount.png",
+      "/projects/horizon_login.png",
+      "/projects/horizon_register.png",
+      "/projects/horizon_profile.png",
+      "/projects/horizon_logo.png"      
+    ],
+    "achievements": [
+      "Implemented complex business logic for real estate workflows",
+      "Achieved 85%+ test coverage across backend services",
+      "Designed scalable architecture supporting 1000+ concurrent users",
+      "Reduced API response time by 40% through query optimization"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Dolci Cerqueira",
+    "description": "Interactive recipe sharing platform with social features and advanced filtering.",
+    "fullDescription": "A comprehensive recipe sharing platform celebrating Brazilian cuisine, built with ASP.NET MVC following industry best practices. The application features a clean, responsive interface powered by Tailwind CSS and enhanced with JavaScript for dynamic user interactions. The backend implements proper MVC architecture with separation of concerns, repository pattern, and efficient data access using Entity Framework. Social features include user profiles, recipe favorites system, rating and review functionality, and a sophisticated filtering system that allows users to search by ingredients, dietary restrictions, cooking time, and difficulty level. The platform demonstrates strong understanding of web development fundamentals while delivering an engaging user experience.",
+    "image": "/projects/dolcicerqueira_cover.png",
+    "link": "/projects/2",
+    "category": "Web Application",
+    "technologies": ["ASP.NET MVC", "C#", "Entity Framework", "SQL Server", "JavaScript", "Tailwind CSS", "LINQ", "Repository Pattern", "Dependency Injection"],
+    "liveUrl": "https://dolci-cerqueira.vercel.app",
+    "githubUrl": "https://github.com/mcerqueiradev/dolcicerqueira",
+    "features": [
+      "User registration and profile management",
+      "Recipe creation and editing with rich text formatting",
+      "Advanced filtering by dietary preferences (vegetarian, vegan, gluten-free)",
+      "Favorites system with personalized collections",
+      "Rating and review system for recipes",
+      "Search functionality with auto-complete suggestions",
+      "Recipe categorization and tagging system",
+      "Responsive design optimized for all devices",
+      "Image upload and management for recipes",
+      "Social features: follow users and share recipes"
+    ],
+    "technicalHighlights": [
+      "Architecture: ASP.NET MVC with proper separation of concerns",
+      "Data Access: Entity Framework with repository pattern",
+      "Frontend: Modern CSS with Tailwind and vanilla JavaScript",
+      "Security: Input validation and XSS protection",
+      "Performance: Optimized database queries with LINQ",
+      "UI/UX: Intuitive navigation and responsive layouts"
+    ],
+    "role": "Full Stack Developer",
+    "duration": "4 months (Personal Project)",
+    "client": "Personal Brand Project",
+    "status": "Completed",
+    "gallery": [
+      "/projects/dolcicerqueira_landingpage.png",
+      "/projects/dolcicerqueira_recipe.png",
+      "/projects/dolcicerqueira_dashboard.png",
+      "/projects/dolcicerqueira_profile.png",
+      "/projects/dolcicerqueira_user.png",
+      "/projects/dolcicerqueira_search.png"
+    ],
+    "achievements": [
+      "Implemented complex search and filter functionality",
+      "Created intuitive user interface for recipe management",
+      "Built secure user authentication system",
+      "Optimized database performance for recipe queries"
+    ]
+  }
+]

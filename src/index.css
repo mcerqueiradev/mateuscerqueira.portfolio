@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Bricolage Grotesque", sans-serif;
+
+  --text-xs: clamp(0.75rem, 0.8vw + 0.5rem, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.8vw + 0.6rem, 0.9375rem);
+  --text-base: clamp(1rem, 0.9vw + 0.6rem, 1.125rem);
+  --text-lg: clamp(1.125rem, 1vw + 0.7rem, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.2vw + 0.7rem, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.5vw + 0.8rem, 1.875rem);
+  --text-3xl: clamp(1.875rem, 2vw + 1rem, 2.25rem);
+  --text-4xl: clamp(2.25rem, 2.5vw + 1rem, 3rem);
+  --text-5xl: clamp(3rem, 3.5vw + 1rem, 3.75rem);
+  --text-6xl: clamp(3.75rem, 4vw + 1rem, 4.5rem);
+  --text-7xl: clamp(4.5rem, 5vw + 1rem, 6rem);
+  --text-8xl: clamp(6rem, 6vw + 1rem, 8rem);
+  --text-9xl: clamp(8rem, 8vw + 1rem, 10rem);
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.4;
+  --leading-relaxed: 1.6;
+
+  --tracking-tighter: -0.02em;
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --color-blue: rgb(2, 11, 206);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  
+}
+
+@supports (-webkit-touch-callout: none) {
+  .modal-container {
+    height: -webkit-fill-available;
+  }
+}
+
