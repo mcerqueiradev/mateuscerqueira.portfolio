@@ -6,7 +6,7 @@
       "dest": "/projects/$1"
     },
     {
-      "src": "/(.*\\.(js|css|json|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|map|pdf))",
+      "src": "/(.*\\.(js|css|json|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|map))",
       "dest": "/$1"
     },
     {
