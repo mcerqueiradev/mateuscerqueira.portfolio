@@ -1,21 +1,19 @@
 {
   "routes": [
     {
-      "src": "/projects/(.*\\.(json|png|jpg|jpeg|gif|svg))",
-      "dest": "/projects/$1",
-      "headers": {
-        "Cache-Control": "public, max-age=31536000"
-      }
+      "src": "/projects/(.*\\.(png|jpg|jpeg|gif|svg))",
+      "dest": "/projects/$1"
     },
     {
       "src": "/assets/(.*)",
-      "dest": "/assets/$1",
-      "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
-      }
+      "dest": "/assets/$1"
     },
     {
-      "src": "/(.*\\.(js|css|json|png|jpg|jpeg|gif|svg|ico|pdf|woff|woff2|ttf|eot|map))",
+      "src": "/(.*\\.(json|pdf|ico))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*\\.\\w+$)",
       "dest": "/$1"
     },
     {
