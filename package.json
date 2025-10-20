@@ -14,7 +14,6 @@
     "@tailwindcss/vite": "^4.1.14",
     "@types/gsap": "^1.20.2",
     "@types/react-textfit": "^1.1.4",
-    "emailjs-com": "^3.2.0",
     "fitty": "^2.4.2",
     "gsap": "^3.13.0",
     "i18next": "^25.6.0",
