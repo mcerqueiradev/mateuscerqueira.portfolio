@@ -31,9 +31,11 @@ function Header() {
             </span>
             <h1 className="text-xl font-bold">Portugal</h1>
           </div>
+
+          {/* IMPLEMENTAR NO FUTURO */}
           <div
             id="translate"
-            className="group bg-neutral-200 rounded-xl lg:rounded-2xl flex items-center justify-center cursor-pointer p-5 hover:bg-blue transition-colors duration-300"
+            className="group bg-neutral-200 rounded-xl lg:rounded-2xl  items-center justify-center cursor-pointer p-5 hover:bg-blue transition-colors duration-300 hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
