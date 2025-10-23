@@ -1,5 +1,6 @@
 import { motion, Variants } from "framer-motion";
 import { useState, useEffect } from "react";
+import projectsData from "../data/projectsData.json";
 
 // Definindo a interface para os projetos
 interface Project {
@@ -67,30 +68,12 @@ function Gallery() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Carrega os dados do arquivo na pasta public
   useEffect(() => {
-    const fetchProjectsData = async () => {
-      try {
-        const response = await fetch("/projectsData.json");
-
-        if (!response.ok) {
-          throw new Error(`Failed to load projects: ${response.status}`);
-        }
-
-        const projectsData: Project[] = await response.json();
-        setProjects(projectsData);
-      } catch (error) {
-        console.error("Error loading projects:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProjectsData();
+    setProjects(projectsData);
+    setLoading(false);
   }, []);
 
   const handleProjectClick = (projectLink: string) => {
-    // Navegação para a página do projeto
     window.location.href = projectLink;
   };
 

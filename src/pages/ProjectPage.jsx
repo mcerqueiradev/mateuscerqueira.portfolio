@@ -6,6 +6,7 @@ import GalleryModal from "../components/GalleryModal";
 import ProjectGallery from "../components/ProjectGallery";
 import ProjectDetails from "../components/ProjectDetails";
 import ProjectHeader from "../components/ProjectHeader";
+import projectsData from "../data/projectsData.json";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -115,12 +116,12 @@ function MainProjectImage({ project }) {
 }
 
 export default function ProjectPage() {
-  const { projectId } = useParams();
   const navigate = useNavigate();
+  const { projectId } = useParams();
   const [project, setProject] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Estados para a galeria
+  // Estados para la galería
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImageIndex, setModalImageIndex] = useState(0);
@@ -131,22 +132,21 @@ export default function ProjectPage() {
   const formattedDate = `${month}'${day}`;
 
   useEffect(() => {
-    const fetchProject = async () => {
+    const findProject = () => {
       try {
-        const response = await fetch("/projectsData.json");
-        const projects = await response.json();
-        const foundProject = projects.find(
+        const foundProject = projectsData.find(
           (p) => p.id.toString() === projectId
         );
         setProject(foundProject || null);
       } catch (error) {
-        console.error("Error fetching project:", error);
+        console.error("Error loading project:", error);
+        setProject(null);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchProject();
+    findProject();
   }, [projectId]);
 
   if (loading) {
