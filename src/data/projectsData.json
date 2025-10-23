@@ -8,7 +8,7 @@
     "link": "/projects/1",
     "category": "Enterprise Web Application",
     "technologies": ["C#", ".NET 7", "Entity Framework Core", "SQL Server", "Angular 16", "TypeScript", "Tailwind CSS", "JWT Authentication", "xUnit", "MediatR", "Clean Architecture"],
-    "liveUrl": "https://horizon-demo.com",
+    "liveUrl": "https://assembly-horizon-spa.vercel.app/",
     "githubUrl": "https://github.com/mcerqueiradev/assembly.horizon.svc",
     "features": [
       "Clean Architecture with Domain-Driven Design",
