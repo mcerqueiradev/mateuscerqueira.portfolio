@@ -77,30 +77,6 @@ function Gallery() {
     window.location.href = projectLink;
   };
 
-  // Teste: Verifique se o arquivo está acessível
-  const testFileAccess = async () => {
-    try {
-      const response = await fetch("/projectsData.json");
-      console.log("File access test:", {
-        status: response.status,
-        statusText: response.statusText,
-        ok: response.ok,
-      });
-
-      if (response.ok) {
-        const content = await response.text();
-        console.log("File content preview:", content.substring(0, 200));
-      }
-    } catch (err) {
-      console.error("File access test failed:", err);
-    }
-  };
-
-  // Execute o teste quando o componente montar
-  useEffect(() => {
-    testFileAccess();
-  }, []);
-
   if (loading) {
     return (
       <section
@@ -213,15 +189,6 @@ function Gallery() {
           animate={{ opacity: 1 }}
         >
           <div className="text-neutral-400 text-lg mb-4">No projects found</div>
-          <p className="text-neutral-600">
-            Please check your projectsData.json file in public folder
-          </p>
-          <button
-            onClick={testFileAccess}
-            className="mt-4 bg-blue text-white px-4 py-2 rounded"
-          >
-            Test File Access
-          </button>
         </motion.div>
       )}
     </section>
