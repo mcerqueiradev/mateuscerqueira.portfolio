@@ -4,6 +4,7 @@ import Nav from "../components/Nav";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 const Home = () => {
   return (
@@ -17,6 +18,9 @@ const Home = () => {
       </div>
       <div id="skills">
         <Skills />
+      </div>
+      <div id="experience">
+        <Experience />
       </div>
       <div id="works">
         <Gallery />

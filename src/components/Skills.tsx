@@ -66,35 +66,6 @@ function Skills() {
           ))}
         </div>
       </div>
-
-      {/* Bottom Section - Additional Info */}
-      <div className="flex flex-col md:flex-row justify-between items-center p-5 lg:p-10 border-t border-neutral-200 mt-10">
-        <div className="flex flex-col md:flex-row gap-10 lg:gap-20 items-center">
-          <div className="text-center md:text-left">
-            <span className="text-xs lg:text-base text-neutral-600 font-medium">
-              Academic Experience
-            </span>
-            <h3 className="text-xl font-bold">3 Years</h3>
-          </div>
-          <div className="text-center md:text-left">
-            <span className="text-xs lg:text-base text-neutral-600 font-medium">
-              Projects
-            </span>
-            <h3 className="text-xl font-bold">6 Completed</h3>
-          </div>
-        </div>
-
-        <div className="mt-5 md:mt-0">
-          <a
-            href="/Mateus_Cerqueira_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue rounded-xl lg:rounded-2xl text-sm md:text-base text-white cursor-pointer px-5 md:px-10 py-2.5 md:py-5 font-medium hover:bg-blue/90 transition-colors"
-          >
-            Resume
-          </a>
-        </div>
-      </div>
     </section>
   );
 }

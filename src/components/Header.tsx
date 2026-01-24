@@ -18,12 +18,12 @@ function Header() {
       <div className="flex flex-col md:flex-row justify-between items-center p-5 lg:p-10">
         <Logo firstName="mateus" lastName="cerqueira" />
         <div className="flex justify-center mt-5 md:mt-0 flex-wrap gap-10 lg:gap-20 items-start md:items-center">
-          <div className="">
+          {/*<div className="">
             <span className="text-xs lg:text-base text-neutral-600 font-medium">
               Available for work
             </span>
             <h1 className="text-xl font-bold">{formattedDate}</h1>
-          </div>
+          </div>*/}
           <div className="">
             <span className="text-xs lg:text-base text-neutral-600 font-medium">
               {" "}

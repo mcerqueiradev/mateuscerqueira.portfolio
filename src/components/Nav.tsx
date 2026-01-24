@@ -16,6 +16,14 @@ const NAV_ITEMS: NavItem[] = [
     href: "#about",
   },
   {
+    name: "Skills",
+    href: "#skills",
+  },
+  {
+    name: "Experience",
+    href: "#experience",
+  },
+  {
     name: "Works",
     href: "#works",
   },
@@ -185,7 +193,7 @@ const BottomNav: React.FC = () => {
                 Mateus Cerqueira
               </h2>
               <p className="text-xs md:text-sm text-neutral-300">
-                C# | .NET | Angular | Full Stack | SQL
+                C# Developer | .NET | Angular | SQL
               </p>
             </div>
           </div>
